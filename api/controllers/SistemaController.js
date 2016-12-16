@@ -10,9 +10,9 @@ module.exports = {
 		var host=req.param('host');
 		var url=req.param('url');
 		var urlredir;
-		if(host==btoa('adfly')){
+		if(host==new Buffer('adfly').toString('base64')){
 			urlredir='https://adf.ly/'+url;
-		} else if(host==btoa('linkbucks')){
+		} else if(host==new Buffer('linkbucks').toString('base64')){
 			urlredir='http://linkbucks.com/'+url;
 		}
     return res.view('index.pug', urlredir);
