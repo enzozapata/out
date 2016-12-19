@@ -3,10 +3,17 @@ html
 	head
 		title Estas saliendo de AnimeMF.
 		script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+		link(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
 	body
-		h1 Saliendo de AnimeMF.
-		h2 Adios!
+		div.container
+			div.row
+				div.col-md-4
+				div.col-md-4
+					img(src='https://lh4.googleusercontent.com/-48LKdkwDClc/Uuu-6mytEMI/AAAAAAAAFJo/dQRq-gAygjI/w250-h100-no/logo2.png')
+					p Saliendo de AnimeMF.org
+					p Vuelvas prontos!
+				div.col-md-4
 		script.
 			$( document ).ready(function() {
-				setTimeout("location.href = '#{url}';",3000);
+				setTimeout("location.href = 'https://shink.in/s/143861?s=#{url}';",3000);
 			});
