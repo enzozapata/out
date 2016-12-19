@@ -4,16 +4,20 @@ html
 		title Estas saliendo de AnimeMF.
 		script(src='https://code.jquery.com/jquery-3.1.1.min.js')
 		link(rel='stylesheet',type='text/css',href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		style.
+			body{background: #f6f6f6}
+			.mensaje {border-radius: 4px; background: white; color: #666; font-weight: bold; margin-top:10px; padding-top: 10px}
 	body
 		div.container
 			div.row
 				div.col-md-4
 				div.col-md-4
-					img(src='https://lh4.googleusercontent.com/-48LKdkwDClc/Uuu-6mytEMI/AAAAAAAAFJo/dQRq-gAygjI/w250-h100-no/logo2.png')
-					p Saliendo de AnimeMF.org
-					p Vuelvas prontos!
+					div.mensaje
+						img(src='https://lh4.googleusercontent.com/-48LKdkwDClc/Uuu-6mytEMI/AAAAAAAAFJo/dQRq-gAygjI/w250-h100-no/logo2.png')
+						p Saliendo de AnimeMF.org
+						p Vuelvas prontos!
 				div.col-md-4
 		script.
 			$( document ).ready(function() {
-				//setTimeout("location.href = 'https://shink.in/s/143861?s=#{url}';",3000);
+				setTimeout("location.href = 'https://shink.in/s/143861?s=#{url}';",3000);
 			});
