@@ -2,6 +2,9 @@ doctype html
 html
 	head
 		title Estas saliendo de AnimeMF.
+		script(src='https://code.jquery.com/jquery-3.1.1.min.js')
 	body
 		script.
-			setTimeout(location.reload.bind('#{url}'), 30000);
+			$( document ).ready(function() {
+				$(location).attr('href','#{url}').delay(3000);
+			});
